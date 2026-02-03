@@ -1,0 +1,31 @@
+.hero {
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    border: 2px solid #000;
+    margin: 4px 2px;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background-color:green;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    line-height: 1.2;
+    transition: background-color 0.3s ease, transform 0.2 ease;
+    cursor: pointer;
+
+    
+}
+
+.btn:hover {
+    background-color: #e66700;
+    transform: translateY(-2px);
+}
