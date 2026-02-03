@@ -102,3 +102,25 @@ body {
     background: #e66700;
     color: #fff;
 }
+
+/* styling for menu table */
+
+.menu-table {
+    width: 100%;
+    max-width: 700px;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background: #fff;
+    border: 2px solid #000;
+}
+
+.menu-table th, .menu-table td {
+    padding: 12px 14px;
+    border: 1px solid #000;
+    text-align: left;
+}
+
+.menu-table th {
+
+    background: #f4f4f4;
+}
