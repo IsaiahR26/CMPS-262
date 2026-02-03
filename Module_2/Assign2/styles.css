@@ -1,8 +1,10 @@
 body {
-    font-family: Arial, helvetica, sans-serif;
+    font-family: 'Inter', Arial, helvetica, sans-serif;
     color: #111;
+    margin: 0;
 }
 
+/* css styling for hero section */
 
 .hero {
     background-size: cover;
@@ -36,6 +38,9 @@ body {
     transform: translateY(-2px);
 }
 
+
+/* css styling for menu page */
+
 .menu-main {
     max-width: 320px;
     margin: 40px auto;
@@ -59,6 +64,29 @@ body {
     font-weight: bold;
    
 }
+
+/* styling for menu table */
+
+.menu-table {
+    width: 100%;
+    max-width: 700px;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background: #fff;
+    border: 2px solid #000;
+}
+
+.menu-table th, .menu-table td {
+    padding: 12px 14px;
+    border: 1px solid #000;
+    text-align: left;
+}
+
+.menu-table th {
+
+    background: #f4f4f4;
+}
+
 
 /* header and tab navigation */
 
@@ -103,28 +131,6 @@ body {
     color: #fff;
 }
 
-/* styling for menu table */
-
-.menu-table {
-    width: 100%;
-    max-width: 700px;
-    margin: 40px auto;
-    border-collapse: collapse;
-    background: #fff;
-    border: 2px solid #000;
-}
-
-.menu-table th, .menu-table td {
-    padding: 12px 14px;
-    border: 1px solid #000;
-    text-align: left;
-}
-
-.menu-table th {
-
-    background: #f4f4f4;
-}
-
 
 /* css styling for contact form */
 
@@ -142,6 +148,28 @@ body {
     border: 2px solid #000;
     border-radius: 6px;
 }
+
+
+/* css styling for about page */
+
+.about-article {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+
+/* css styling for footer */
+
+.site-footer {
+    padding: 16px 24px;
+    font-size: 14px;
+    color: #555;
+}
+
 
 /* basic media responsive for mobile devices */
 
