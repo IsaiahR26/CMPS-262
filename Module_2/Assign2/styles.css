@@ -124,3 +124,35 @@ body {
 
     background: #f4f4f4;
 }
+
+
+/* css styling for contact form */
+
+.contact-form {
+    max-width: 500px;
+    margin: 40px auto;
+    display: grid;
+    gap: 10p;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 6px;
+}
+
+/* basic media responsive for mobile devices */
+
+@media (max-width: 600px) {
+    .nav-tabs {
+        width: 100%;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        padding: 40px 16px;
+    }
+}
