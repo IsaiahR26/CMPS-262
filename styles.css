@@ -111,19 +111,21 @@ body {
 
 .nav-tabs a {
     text-decoration: none;
-    color: #111;
-    padding: 6px 14p;
+    color: white;
+    padding: 3px 5px;
     border: 2px solid #000;
-    background: #fff;
-    background-color: #fff;
-    border-radius: 8px;
+    background: #ffffff;
+    background-color: green;
+    border-radius: 10px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
     
 }
 
 .nav-tabs a:hover {
-    background: #eaeaea;
+    background: #e66700;
+    transform: translateY(-1px);
 }
 
 .nav-tabs a.active {
