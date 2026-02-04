@@ -134,11 +134,27 @@ body {
 
 /* css styling for contact form */
 
+.contact-main {
+    justify-content: center;
+    padding: 48px 16px;
+}
+
+.content-section {
+    width: 100%;
+    max-width: 900px;
+}
+
+.form-title {
+    margin-bottom: 16px;
+    text-align: center;
+}
+
 .contact-form {
+    width: 100%;
     max-width: 700px;
-    margin: 40px auto;
+    margin: 0px auto;
     display: grid;
-    gap: 10p;
+    gap: 10px;
 }
 
 .contact-form input,
