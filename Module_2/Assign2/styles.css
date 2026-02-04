@@ -134,44 +134,12 @@ body {
 
 /* css styling for contact form */
 
-
-.contact-main {
-    
-    display: flex;
-    justify-content: center;
-    align-items: fle-start;
-    padding: 48px 16px;
-
-}
-
-.content-section {
-    width: min(720px, 100%);
-    background: #fff;
-    border: 1px solid #e6e6e6;
-    border-radius: 14px;
-    padding: 28px 28px 22px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
-}
-
-.form-title{
-    margin: 0 0 18px;
-    font-size: 32px;
-    letter-spacing: -0.5px;
-}
-
 .contact-form {
     max-width: 700px;
-    width: 100%;
     margin: 40px auto;
     display: grid;
-    gap: 14px;
+    gap: 10p;
 }
-
-.contact-form label {
-    font-weight: 600;
-    font-size: 14px;
-}
-
 
 .contact-form input,
 .contact-form select,
