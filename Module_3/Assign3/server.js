@@ -43,6 +43,9 @@ app.get("/contact", (req, res) => {
 
 app.get("/contact-submit", (req, res) => {
   const { name, email, other, message } = req.query;
+  const timestamp = new Date().toLocaleString();
+
+//Included time stamp when form is submitted
 
   res.send(`
     <h2>Form Received</h2>
@@ -50,6 +53,7 @@ app.get("/contact-submit", (req, res) => {
     <p>Email: ${email || ""}</p>
     <p>Other: ${other || ""}</p>
     <p>Thank you, ${name}! We have received your message: ${message}</p>
+    <p><strong>Submitted at:</strong> ${timestamp}</p>
   `);
 });
 
