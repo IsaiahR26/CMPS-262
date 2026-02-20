@@ -2,6 +2,8 @@ const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
 
+const pool = require("./db");
+
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -12,12 +14,14 @@ app.get("/", (req, res) => {
     res.json({message: "EatUp Delivery API is Running"});
 });
 
-app.get("/api/menu", (req, res) => {
-    res.json([
-        { id: 1, item: "Cheeseburger", price: 9.99 },
-        { id: 2, item: "Chicken Bowl", price: 9.99 },
-        { id: 3, item: "Veggie Wrap", price: 7.99 }
-    ]);
+app.get("/api/menu", async (req, res) => {
+    try {
+        const result = await pool.query("SELECT * FROM menu ORDER BY id;");
+        res.json(result.rows);
+    } catch (err) {
+        console.error("Database error:", err.message);
+        res.status(500).json({error: "Database error"});
+    }
 });
 
 app.listen(PORT, () => {
