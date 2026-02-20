@@ -15,13 +15,14 @@ app.get("/", (req, res) => {
 });
 
 app.get("/api/menu", async (req, res) => {
-    try {
-        const result = await pool.query("SELECT * FROM menu ORDER BY id;");
-        res.json(result.rows);
-    } catch (err) {
-        console.error("Database error:", err.message);
-        res.status(500).json({error: "Database error"});
-    }
+  try {
+    const result = await pool.query("SELECT * FROM menu ORDER BY id;");
+    res.setHeader("Content-Type", "application/json");
+    res.send(JSON.stringify(result.rows, null, 2)); // <- pretty print
+  } catch (err) {
+    console.error("Database error:", err.message);
+    res.status(500).json({ error: "Database error" });
+  }
 });
 
 app.listen(PORT, () => {
